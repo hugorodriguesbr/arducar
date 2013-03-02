@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Comunicação" />
+
+        <EditText
+            android:id="@+id/mydevicename"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/mytxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="37dp"
+            android:text="Conexão Fechada." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100px" >
+
+
+            <Button
+                android:id="@+id/btn_buzina"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Bz" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100px" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_esquerda"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_default_small"
+                        android:minHeight="70dip"
+                        android:minWidth="140dip"
+                        android:text="Esquerda" />
+
+                    <Button
+                        android:id="@+id/btn_direita"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:background="@android:drawable/btn_default_small"
+                        android:minHeight="70dip"
+                        android:minWidth="140dip"
+                        android:text="Direita" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right" >
+
+                    <Button
+                        android:id="@+id/btn_traz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="20px"
+                        android:background="@android:drawable/btn_default_small"
+                        android:minHeight="130dip"
+                        android:minWidth="70dip"
+                        android:text="Ré" />
+
+                    <Button
+                        android:id="@+id/btn_frente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10px"
+                        android:background="@android:drawable/btn_default_small"
+                        android:minHeight="150dip"
+                        android:minWidth="70dip"
+                        android:text="Frente" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
